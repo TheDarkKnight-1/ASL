@@ -1,5 +1,5 @@
 # ASL
-# Making Alexa respond to Sign Language using Tensorflow.js
+# Making Google Assistant respond to Sign Language using Tensorflow.js
 
 ## Running the code
 To use the code, first install the JavaScript dependencies by running  
