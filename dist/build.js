@@ -552,7 +552,7 @@ var TextToSpeech = function () {
       }
 
       if (word != 'Hey Google' && this.currentPredictedWords.length == 0) {
-        console.log("first word should be Hey GOogle");
+        console.log("first word should be Hey Google");
         console.log(word);
         return;
       }
@@ -4916,7 +4916,7 @@ var Engine = (function () {
 exports.Engine = Engine;
 
 },{"./environment":34,"./globals":35,"./ops/ops":121,"./profiler":142,"./tape":143,"./tensor":144,"./util":150}],34:[function(require,module,exports){
-(function (global){
+(function (global){(function (){
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -5274,7 +5274,7 @@ function getOrMakeEnvironment() {
 }
 exports.ENV = getOrMakeEnvironment();
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+}).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./device_util":31,"./doc":32,"./engine":33,"./math":103,"./util":150}],35:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
@@ -20741,7 +20741,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 // The following constants are related to IEEE 754 limits.
 //
-var global = this,
+
+// Detect the global object, even if operating in strict mode.
+// http://stackoverflow.com/a/14387057/265298
+var global = (0, eval)('this'),
     width = 256,        // each RC4 output is 0 <= x < 256
     chunks = 6,         // at least six RC4 outputs for each double
     digits = 52,        // there are 52 significant digits in a double
@@ -20962,7 +20965,7 @@ if ((typeof module) == 'object' && module.exports) {
 );
 
 },{"crypto":2}],161:[function(require,module,exports){
-(function (global){
+(function (global){(function (){
 /*! https://mths.be/utf8js v2.1.2 by @mathias */
 ;(function(root) {
 
@@ -21208,5 +21211,5 @@ if ((typeof module) == 'object' && module.exports) {
 
 }(this));
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+}).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}]},{},[1]);

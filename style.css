@@ -15,6 +15,7 @@ body{
   background-color: black;
   border: 8px solid black;
   border-radius: 5px;
+  margin-left: 5rem;
 }
 
 #status{
@@ -67,12 +68,11 @@ h1 .subtext {
   height: 100%;
   left:0;
   width: 39.75%;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
-  overflow-x: hidden;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   border-right: 5px solid black;
   background:green;
 }
